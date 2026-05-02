@@ -1,14 +1,4 @@
 package observer;
-
-
-/**
- * Concrete Observer implementation.
- * Simulates a student receiving a grade notification.
- *
- * This is the Observer pattern in action:
- *  - GradeSubject = Mark
- *  - GradeObserver = StudentNotificationService (this class)
- */
 public class StudentNotificationService implements GradeObserver {
 
     private final String studentName;
@@ -19,14 +9,22 @@ public class StudentNotificationService implements GradeObserver {
 
     @Override
     public void onGradeUpdated(String studentId, String courseName, double totalMark) {
-        System.out.printf("[NOTIFICATION] Student '%s' (ID: %s): your grade for '%s' has been updated. Total: %.1f%n",
-                studentName, studentId, courseName, totalMark);
+    }
 
-        if (totalMark < 50) {
-            System.out.printf("[WARNING] You are currently FAILING '%s'. Total: %.1f/100%n", courseName, totalMark);
-        } else {
-            System.out.printf("[INFO] You are PASSING '%s'. Total: %.1f/100%n", courseName, totalMark);
-        }
+    public void onAtt1Updated(String studentId, String courseName, double att1) {
+        System.out.printf("[%s] First attestation: %.1f / 30%n", studentName, att1);
+    }
+
+    public void onAtt2Updated(String studentId, String courseName, double att1, double att2) {
+        System.out.printf("[%s] Second attestation: %.1f / 30%n", studentName, att2);
+    }
+
+    public void onFinalUpdated(String studentId, String courseName, double att1, double att2, double finalMark) {
+        double total = att1 + att2 + finalMark;
+        System.out.printf("[%s] Final exam: %.1f / 40%n", studentName, finalMark);
+        System.out.printf("[%s] Total: %.1f/30 + %.1f/30 + %.1f/40 = %.1f/100 — %s%n",
+                studentName, att1, att2, finalMark, total,
+                total >= 50 ? "PASSED" : "FAILED");
     }
 }
 

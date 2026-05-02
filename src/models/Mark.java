@@ -2,30 +2,20 @@ package models;
 
 import observer.GradeObserver;
 import observer.GradeSubject;
-
+import observer.StudentNotificationService;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Mark class as seen in the UML diagram.
- * Attributes: att1, att2, final (here finalMark to avoid keyword clash)
- * Implements Observer pattern to notify students when grades are posted.
- *
- * Total = att1 + att2 + final
- * Student fails if total < passing threshold (conventionally < 50 or < 30).
- */
+
 public class Mark implements GradeSubject {
 
-    // From diagram: -att1: double, -att2: double, -final: double
     private double att1;
     private double att2;
     private double finalMark;
 
-    // Context: which student and which course this mark belongs to
     private String studentId;
     private String courseName;
 
-    // Observer list
     private final List<GradeObserver> observers = new ArrayList<>();
 
     public Mark(String studentId, String courseName) {
@@ -33,7 +23,6 @@ public class Mark implements GradeSubject {
         this.courseName = courseName;
     }
 
-    // From diagram: +getTotal()
     public double getTotal() {
         return att1 + att2 + finalMark;
     }
@@ -42,7 +31,6 @@ public class Mark implements GradeSubject {
         return getTotal() >= 50; // passing threshold: 50 out of 100
     }
 
-    // --- Observer pattern ---
 
     @Override
     public void addObserver(GradeObserver observer) {
@@ -63,24 +51,38 @@ public class Mark implements GradeSubject {
         }
     }
 
-    // --- Setters that trigger notifications ---
-
     public void setAtt1(double att1) {
         this.att1 = att1;
-        notifyObservers();
+        for (GradeObserver observer : observers) {
+            if (observer instanceof StudentNotificationService sns) {
+                sns.onAtt1Updated(studentId, courseName, this.att1);
+            } else {
+                observer.onGradeUpdated(studentId, courseName, getTotal());
+            }
+        }
     }
 
     public void setAtt2(double att2) {
         this.att2 = att2;
-        notifyObservers();
+        for (GradeObserver observer : observers) {
+            if (observer instanceof StudentNotificationService sns) {
+                sns.onAtt2Updated(studentId, courseName, this.att1, this.att2);
+            } else {
+                observer.onGradeUpdated(studentId, courseName, getTotal());
+            }
+        }
     }
 
     public void setFinalMark(double finalMark) {
         this.finalMark = finalMark;
-        notifyObservers();
+        for (GradeObserver observer : observers) {
+            if (observer instanceof StudentNotificationService sns) {
+                sns.onFinalUpdated(studentId, courseName, this.att1, this.att2, this.finalMark);
+            } else {
+                observer.onGradeUpdated(studentId, courseName, getTotal());
+            }
+        }
     }
-
-    // --- Getters ---
 
     public double getAtt1() { return att1; }
     public double getAtt2() { return att2; }
