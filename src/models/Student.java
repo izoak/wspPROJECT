@@ -22,7 +22,7 @@ public class Student extends User implements GradeObserver {
     public Student(String id, String firstName, String lastName, String username, String passwordHash,
                    String major, int yearOfStudy) {
         super(id, firstName, lastName, username, passwordHash);
-        this.major = Objects.requireNonNull(major);
+        this.major = major;
         this.yearOfStudy = yearOfStudy;
         this.registeredCourses = new ArrayList<>();
         this.marksByCourseName = new LinkedHashMap<>();

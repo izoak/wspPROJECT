@@ -13,7 +13,7 @@ public abstract class Employee extends User {
     protected Employee(String id, String firstName, String lastName, String username, String passwordHash,
                        String department) {
         super(id, firstName, lastName, username, passwordHash);
-        this.department = Objects.requireNonNull(department);
+        this.department = department;
         this.inbox = new ArrayList<>();
     }
 
@@ -22,7 +22,7 @@ public abstract class Employee extends User {
     }
 
     public void setDepartment(String department) {
-        this.department = Objects.requireNonNull(department);
+        this.department = department;
     }
 
     public void sendMessage(Employee recipient, String message) {

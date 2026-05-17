@@ -175,9 +175,9 @@ public class UniversitySystem {
         long passed = students.stream().filter(s -> s.getFailedCoursesCount() == 0 && !s.getMarksByCourseName().isEmpty()).count();
         OptionalDouble maxGpa = students.stream().mapToDouble(Student::calculateGpa).max();
         OptionalDouble minGpa = students.stream().mapToDouble(Student::calculateGpa).min();
-        return "═══════════════════════════════════════" + System.lineSeparator()
+        return "---------------------------------------" + System.lineSeparator()
                 + "         ACADEMIC REPORT               " + System.lineSeparator()
-                + "═══════════════════════════════════════" + System.lineSeparator()
+                + "----------------------------------------" + System.lineSeparator()
                 + "Total students:          " + students.size() + System.lineSeparator()
                 + "Average GPA:             " + String.format("%.2f", averageGpa) + System.lineSeparator()
                 + "Max GPA:                 " + String.format("%.2f", maxGpa.orElse(0)) + System.lineSeparator()
@@ -187,7 +187,7 @@ public class UniversitySystem {
                 + "Total researchers:       " + researchersByUserId.size() + System.lineSeparator()
                 + "Total research papers:   " + researchersByUserId.values().stream().mapToInt(r -> r.getPapers().size()).sum() + System.lineSeparator()
                 + "Total projects:          " + projectsById.size() + System.lineSeparator()
-                + "═══════════════════════════════════════";
+                + "----------------------------------------";
     }
     public Student registerBachelorStudent(String firstName, String lastName, String username,
                                            String rawPassword, String major, int yearOfStudy) {

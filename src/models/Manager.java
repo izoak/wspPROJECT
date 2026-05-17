@@ -12,7 +12,7 @@ public class Manager extends Employee {
     public Manager(String id, String firstName, String lastName, String username, String passwordHash,
                    String department, ManagerType managerType) {
         super(id, firstName, lastName, username, passwordHash, department);
-        this.managerType = Objects.requireNonNull(managerType);
+        this.managerType = managerType;
     }
 
     @Override

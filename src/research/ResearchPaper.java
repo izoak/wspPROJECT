@@ -17,12 +17,12 @@ public class ResearchPaper implements Serializable {
 
     public ResearchPaper(String paperId, String title, String journal, LocalDate publicationDate) {
         this.paperId = paperId;
-        this.title   = title;
+        this.title = title;
         this.journal = journal;
         this.publicationDate = publicationDate;
-        this.authors  = new ArrayList<>();
+        this.authors = new ArrayList<>();
         this.citations = 0;
-        this.pages     = 0;
+        this.pages = 0;
     }
 
     public void addAuthor(String authorName) {

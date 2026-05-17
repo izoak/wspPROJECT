@@ -87,11 +87,21 @@ public class Mark implements GradeSubject, java.io.Serializable {
         }
     }
 
-    public double getAtt1() { return att1; }
-    public double getAtt2() { return att2; }
-    public double getFinalMark() { return finalMark; }
-    public String getStudentId() { return studentId; }
-    public String getCourseName() { return courseName; }
+    public double getAtt1() { 
+        return att1; 
+    }
+    public double getAtt2() { 
+        return att2; 
+    }
+    public double getFinalMark() { 
+        return finalMark; 
+    }
+    public String getStudentId() { 
+        return studentId; 
+    }
+    public String getCourseName() {
+        return courseName; 
+    }
 
     private void validateComponent(double value, double maxValue, String componentName) {
         if (value < 0 || value > maxValue) {

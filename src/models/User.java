@@ -17,11 +17,11 @@ public abstract class User implements Serializable, Comparable<User> {
     private String deactivationReason;
 
     protected User(String id, String firstName, String lastName, String username, String passwordHash) {
-        this.id = Objects.requireNonNull(id);
-        this.firstName = Objects.requireNonNull(firstName);
-        this.lastName = Objects.requireNonNull(lastName);
-        this.username = Objects.requireNonNull(username);
-        this.passwordHash = Objects.requireNonNull(passwordHash);
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.passwordHash = passwordHash;
         this.active = true;
     }
 
@@ -40,7 +40,7 @@ public abstract class User implements Serializable, Comparable<User> {
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = Objects.requireNonNull(firstName);
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -48,7 +48,7 @@ public abstract class User implements Serializable, Comparable<User> {
     }
 
     public void setLastName(String lastName) {
-        this.lastName = Objects.requireNonNull(lastName);
+        this.lastName = lastName;
     }
 
     public String getUsername() {
@@ -56,7 +56,7 @@ public abstract class User implements Serializable, Comparable<User> {
     }
 
     public void setUsername(String username) {
-        this.username = Objects.requireNonNull(username);
+        this.username = username;
     }
 
     public String getPasswordHash() {
@@ -64,7 +64,7 @@ public abstract class User implements Serializable, Comparable<User> {
     }
 
     public void setPasswordHash(String passwordHash) {
-        this.passwordHash = Objects.requireNonNull(passwordHash);
+        this.passwordHash = passwordHash;
     }
 
     public boolean isActive() {

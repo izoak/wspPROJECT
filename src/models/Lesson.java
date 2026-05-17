@@ -16,14 +16,26 @@ public class Lesson {
         this.teacher = teacher;
     }
 
-    public LessonType getLessonType() { return lessonType; }
-    public void setLessonType(LessonType lessonType) { this.lessonType = lessonType; }
+    public LessonType getLessonType() { 
+        return lessonType; 
+    }
+    public void setLessonType(LessonType lessonType) { 
+        this.lessonType = lessonType; 
+    }
 
-    public String getRoom() { return room; }
-    public void setRoom(String room) { this.room = room; }
+    public String getRoom() { 
+        return room; 
+    }
+    public void setRoom(String room) { 
+        this.room = room; 
+    }
 
-    public String getTeacher() { return teacher; }
-    public void setTeacher(String teacher) { this.teacher = teacher; }
+    public String getTeacher() { 
+        return teacher; 
+    }
+    public void setTeacher(String teacher) { 
+        this.teacher = teacher; 
+    }
 
     @Override
     public String toString() {

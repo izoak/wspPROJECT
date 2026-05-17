@@ -15,9 +15,9 @@ public class ResearchProject implements Serializable {
     private final List<String> participantIds; 
 
     public ResearchProject(String projectId, String topic) {
-        this.projectId      = projectId;
-        this.topic          = topic;
-        this.papers         = new ArrayList<>();
+        this.projectId = projectId;
+        this.topic = topic;
+        this.papers = new ArrayList<>();
         this.participantIds = new ArrayList<>();
     }
     public void addParticipant(ResearcherDecorator researcher) throws NotResearcherException {

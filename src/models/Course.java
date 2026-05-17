@@ -55,16 +55,30 @@ public class Course implements Serializable {
     }
 
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getName() { 
+        return name; 
+    }
+    public void setName(String name) { 
+        this.name = name; 
+    }
 
-    public String getCourseId() { return courseId; }
+    public String getCourseId() { 
+        return courseId; 
+    }
 
-    public int getCredits() { return credits; }
-    public void setCredits(int credits) { this.credits = credits; }
+    public int getCredits() { 
+        return credits; 
+    }
+    public void setCredits(int credits) { 
+        this.credits = credits; 
+    }
 
-    public List<LessonType> getLessons() { return lessons; }
-    public List<String> getTeachers() { return teachers; }
+    public List<LessonType> getLessons() { 
+        return lessons; 
+    }
+    public List<String> getTeachers() { 
+        return teachers; 
+    }
 
     @Override
     public boolean equals(Object o) {

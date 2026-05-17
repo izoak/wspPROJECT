@@ -84,7 +84,7 @@ public class Main {
             System.out.println("8.  View notifications");
             System.out.println("9.  Show top researchers");
             if (isResearcher) {
-                System.out.println("── Researcher Options ──────────────────");
+                System.out.println("-- Researcher Options -------------");
                 System.out.println("10. My research papers");
                 System.out.println("11. Add research paper");
                 System.out.println("12. View all university papers");
@@ -156,7 +156,7 @@ public class Main {
             System.out.println("4. View inbox");
             System.out.println("5. Show top researchers");
             if (isResearcher) {
-                System.out.println("── Researcher Options ──────────────────");
+                System.out.println("-- Researcher Options ------------------");
                 System.out.println("6.  My research papers");
                 System.out.println("7.  Add research paper");
                 System.out.println("8.  View all university papers");
@@ -235,7 +235,7 @@ public class Main {
             System.out.println("6.  View teachers");
             System.out.println("7.  Create academic report");
             System.out.println("8.  View inbox");
-            System.out.println("── Research Management ─────────────────");
+            System.out.println("-- Research Management ------------------");
             System.out.println("9.  Promote user to researcher");
             System.out.println("10. Assign supervisor to 4th-year student");
             System.out.println("11. Create research project");
@@ -244,7 +244,7 @@ public class Main {
             System.out.println("14. View all research papers");
             System.out.println("15. Show top researchers");
             if (isResearcher) {
-                System.out.println("── My Researcher Options ───────────────");
+                System.out.println("-- My Researcher Options ---------------");
                 System.out.println("16. My research papers");
                 System.out.println("17. Add research paper");
                 System.out.println("18. Join research project");
@@ -528,15 +528,15 @@ public class Main {
         System.out.print("Choose: ");
     }
     private static void printWelcome() {
-        System.out.println("╔══════════════════════════════════════╗");
-        System.out.println("║      WSP University Console System   ║");
-        System.out.println("╠══════════════════════════════════════╣");
-        System.out.println("║  Demo accounts:                      ║");
-        System.out.println("║  admin    / admin123                 ║");
-        System.out.println("║  student  / student123               ║");
-        System.out.println("║  teacher  / teacher123               ║");
-        System.out.println("║  manager  / manager123               ║");
-        System.out.println("╚══════════════════════════════════════╝");
+        System.out.println("----------------------------------------");
+        System.out.println("|     WSP University Console System    |");
+        System.out.println("|--------------------------------------|");
+        System.out.println("| Demo accounts:                       |");
+        System.out.println("|  admin    / admin123                 |");
+        System.out.println("|  student  / student123               |");
+        System.out.println("|  teacher  / teacher123               |");
+        System.out.println("|  manager  / manager123               |");
+        System.out.println("----------------------------------------");
     }
     private static int readInt(Scanner scanner) {
         while (true) {
