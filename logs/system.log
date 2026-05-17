@@ -1,0 +1,121 @@
+[2026-05-02 16:05:57] Registered user admin
+[2026-05-02 16:05:57] Registered user student
+[2026-05-02 16:05:57] Registered user teacher
+[2026-05-02 16:05:57] Registered user manager
+[2026-05-02 16:05:57] manager assigned CS101 to teacher
+[2026-05-02 16:05:57] manager assigned CS202 to teacher
+[2026-05-02 16:08:23] User logged in: admin
+[2026-05-02 16:08:51] User logged out: admin
+[2026-05-02 16:08:58] Registered user admin
+[2026-05-02 16:09:05] User logged in: admin
+[2026-05-02 16:09:34] User logged out: admin
+[2026-05-02 16:09:47] User logged in: student
+[2026-05-02 16:10:05] User logged out: student
+[2026-05-02 16:10:14] User logged in: teacher
+[2026-05-02 16:18:27] User logged in: admin
+[2026-05-02 16:20:11] User logged in: manager
+[2026-05-02 16:20:45] manager published news NEWS-3
+[2026-05-02 16:20:50] User logged out: manager
+[2026-05-02 16:20:56] User logged in: student
+[2026-05-02 16:22:46] User logged in: admin
+[2026-05-02 16:23:21] Admin changed active status for teacher to false
+[2026-05-02 16:23:31] User logged out: admin
+[2026-05-02 16:23:43] Login failed for username teacher: account inactive
+[2026-05-17 15:50:34] User logged in: admin
+[2026-05-17 15:56:14] User logged in: admin
+[2026-05-17 15:58:48] User logged in: admin
+[2026-05-17 16:25:06] Registered user admin
+[2026-05-17 16:25:06] Registered user student
+[2026-05-17 16:25:06] Registered user teacher
+[2026-05-17 16:25:06] Registered user manager
+[2026-05-17 16:25:06] manager assigned CS101 to teacher
+[2026-05-17 16:25:06] manager assigned CS202 to teacher
+[2026-05-17 16:25:15] User logged in: admin
+[2026-05-17 16:26:16] User logged in: manager
+[2026-05-17 16:27:00] User logged in: admin
+[2026-05-17 16:28:24] Registered user pakita
+[2026-05-17 16:28:55] Admin changed active status for pakita to false
+[2026-05-17 16:31:35] User logged out: admin
+[2026-05-17 16:31:41] Login failed for username pakita: account inactive
+[2026-05-17 16:31:53] User logged in: admin
+[2026-05-17 16:33:20] User logged in: admin
+[2026-05-17 16:41:34] User logged in: admin
+[2026-05-17 16:41:44] Admin changed active status for pakita to true
+[2026-05-17 16:42:09] Admin changed active status for pakita to false | reason: nety fluorographii
+[2026-05-17 16:44:11] User logged out: admin
+[2026-05-17 16:44:17] Login failed for username pakita: account inactive
+[2026-05-17 16:44:23] Login failed for username pakita: account inactive
+[2026-05-17 16:44:59] Admin changed active status for pakita to true
+[2026-05-17 16:45:06] Login failed for username pakita: account inactive
+[2026-05-17 16:46:29] User logged in: pakita
+[2026-05-17 17:50:13] User logged in: manager
+[2026-05-17 17:50:37] manager published news NEWS-3
+[2026-05-17 17:51:08] User logged out: manager
+[2026-05-17 17:51:15] User logged in: admin
+[2026-05-17 17:51:42] User logged in: admin
+[2026-05-17 17:51:50] Admin changed active status for pakita to false | reason: 1
+[2026-05-17 17:51:52] User logged out: admin
+[2026-05-17 17:51:57] Login failed for username pakita: account inactive
+[2026-05-17 17:52:36] User logged in: teacher
+[2026-05-17 17:53:36] User logged out: teacher
+[2026-05-17 17:53:43] User logged in: manager
+[2026-05-17 17:53:52] User logged out: manager
+[2026-05-17 17:54:02] User logged in: student
+[2026-05-17 17:54:06] student requested registration for CS101
+[2026-05-17 17:54:36] User logged out: student
+[2026-05-17 17:54:41] User logged in: manager
+[2026-05-17 17:54:54] manager approved CS101 for student
+[2026-05-17 17:54:57] User logged out: manager
+[2026-05-17 17:55:02] User logged in: student
+[2026-05-17 17:55:37] User logged out: student
+[2026-05-17 17:55:42] User logged in: teacher
+[2026-05-17 17:56:12] User logged out: teacher
+[2026-05-17 17:58:11] Registered user admin
+[2026-05-17 17:58:11] Registered user student
+[2026-05-17 17:58:11] Registered user teacher
+[2026-05-17 17:58:11] Registered user manager
+[2026-05-17 17:58:11] manager assigned CS101 to teacher
+[2026-05-17 17:58:11] manager assigned CS202 to teacher
+[2026-05-17 17:58:18] User logged in: teacher
+[2026-05-17 17:58:25] teacher updated marks for student in CS101
+[2026-05-17 17:58:39] User logged out: teacher
+[2026-05-17 17:58:47] User logged in: student
+[2026-05-17 17:59:44] User logged out: student
+[2026-05-17 17:59:51] User logged in: manager
+[2026-05-17 18:00:08] User logged out: manager
+[2026-05-17 18:00:20] User logged in: admin
+[2026-05-17 18:00:49] Registered user pakita
+[2026-05-17 18:00:53] User logged out: admin
+[2026-05-17 18:00:57] User logged in: manager
+[2026-05-17 18:01:04] manager assigned MATH101 to pakita
+[2026-05-17 18:01:09] User logged out: manager
+[2026-05-17 18:01:13] Login failed for username student: wrong password
+[2026-05-17 18:01:18] User logged in: student
+[2026-05-17 18:01:39] User logged in: student
+[2026-05-17 18:01:50] student requested registration for MATH101
+[2026-05-17 18:01:59] User logged out: student
+[2026-05-17 18:02:04] User logged in: manager
+[2026-05-17 18:02:18] manager approved MATH101 for student
+[2026-05-17 18:02:26] manager assigned MATH101 to pakita
+[2026-05-17 18:02:29] User logged out: manager
+[2026-05-17 18:02:34] User logged in: student
+[2026-05-17 18:03:16] student rated pakita with 5
+[2026-05-17 18:03:18] User logged out: student
+[2026-05-17 18:03:23] User logged in: pakita
+[2026-05-17 18:03:58] User logged out: pakita
+[2026-05-17 18:04:06] User logged in: admin
+[2026-05-17 18:04:35] User logged out: admin
+[2026-05-17 18:04:39] User logged in: manager
+[2026-05-17 18:05:18] User logged out: manager
+[2026-05-17 18:05:24] User logged in: student
+[2026-05-17 18:37:16] User logged in: student
+[2026-05-17 18:37:22] User logged out: student
+[2026-05-17 18:37:27] User logged in: manager
+[2026-05-17 18:38:16] User logged out: manager
+[2026-05-17 18:38:21] User logged in: student
+[2026-05-17 18:38:24] User logged out: student
+[2026-05-17 18:38:28] User logged in: admin
+[2026-05-17 18:38:39] User logged out: admin
+[2026-05-17 18:38:48] User logged in: teacher
+[2026-05-17 18:39:18] teacher joined project RP-001
+[2026-05-17 18:52:08] User logged in: admin
