@@ -68,11 +68,11 @@ public class ResearchPaper implements Serializable {
         this.pages = p;
     }
 
-    public LocalDate getPublicationDate(){ 
-        return publicationDate; 
+    public LocalDate getPublicationDate() {
+        return publicationDate;
     }
-    public void setPublicationDate(LocalDate date){ 
-        this.publicationDate = Objects.requireNonNull(date); 
+    public void setPublicationDate(LocalDate date) {
+        this.publicationDate = date;
     }
 
     public String getJournal(){ 
